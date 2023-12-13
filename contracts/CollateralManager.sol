@@ -268,7 +268,7 @@ contract CollateralManager is Initializable, AccessControlUpgradeable {
      */
     function setSeizedAssetsWallet(address _seizedAssetsWallet)
         external
-        onlyRole(DISPUTE_RESOLVER)
+        onlyRole(ADMIN_ROLE)
     {
         seizedAssetsWallet = _seizedAssetsWallet;
     }
