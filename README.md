@@ -7,7 +7,14 @@ The [Collateral Manager](contracts/CollateralManager.sol) is responsible for pro
 ```
 deposit(address asset, uint256 amount)
 withdraw(address asset, uint256 amount)
-lock(address asset, uint256 amount, uint256 muonAppId, address user, bytes32 reqId, bytes32[] calldata unlockables)
+lock(
+    address asset,
+    uint256 amount,
+    uint256 muonAppId,
+    address user,
+    bytes32 reqId,
+    bytes32[] calldata unlockables
+)
 unlock(bytes32[] calldata unlockables)
 ```
 
